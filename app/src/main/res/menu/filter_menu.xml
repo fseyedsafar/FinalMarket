@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/close_filter_activity"
+        android:icon="@drawable/ic_close"
+        android:title="@string/close_filter"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/filter_lable"
+        android:title="@string/filter_product"
+        app:showAsAction="always"
+        />
+</menu>

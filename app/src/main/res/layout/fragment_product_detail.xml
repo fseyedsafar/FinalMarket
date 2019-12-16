@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".controller.fragment.ProductDetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryTextColor">
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/image_detail_fragment"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    android:background="@color/backgroundColor"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <LinearLayout
+                    android:id="@+id/linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:background="@color/backgroundColor"
+                    app:layout_constraintTop_toTopOf="parent" >
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/image_detail_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/share_detail_fragment"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:background="?attr/actionModeShareDrawable"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear_layout" />
+
+                <ImageView
+                    android:id="@+id/like_detail_fragment"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/ic_like"
+                    app:layout_constraintEnd_toStartOf="@+id/share_detail_fragment"
+                    app:layout_constraintTop_toBottomOf="@+id/linear_layout" />
+
+                <TextView
+                    android:id="@+id/title_detail_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="عنوان"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/like_detail_fragment" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="نظرات کاربران"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        app:backgroundTint="#FFFFFF" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="مشخصات"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        app:backgroundTint="#FFFFFF" />
+
+                </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="توضیحات"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/descreption_detail_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="توضیحات"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description" />
+
+                <TextView
+                    android:id="@+id/category_detail_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="دسته بندی"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/status_sale_detail_fragment"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/descreption_detail_fragment" />
+
+                <TextView
+                    android:id="@+id/status_sale_detail_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="وضعیت فروش"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/category_detail_fragment" />
+
+                <TextView
+                    android:id="@+id/price_detail_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="قیمت"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/status_sale_detail_fragment" />
+
+                <TextView
+                    android:id="@+id/regular_price_detail_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/price_detail_fragment"
+                    app:layout_constraintTop_toTopOf="@+id/price_detail_fragment" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/sale_detail_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="افزودن به سبد خرید"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/secondaryColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/regular_price_detail_fragment" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

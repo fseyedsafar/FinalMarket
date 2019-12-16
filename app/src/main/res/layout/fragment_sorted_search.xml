@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".controller.fragment.SortedSearchFragment">
+
+    <RadioGroup
+        android:id="@+id/sort_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <RadioButton
+            android:id="@+id/most_visited_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RadioButtonSort"
+            android:text="پربازدیدترین" />
+
+        <RadioButton
+            android:id="@+id/best_selling_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RadioButtonSort"
+            android:text="پرفروش ترین" />
+
+        <RadioButton
+            android:id="@+id/price_high_to_low_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RadioButtonSort"
+            android:text="قیمت از زیاد به کم" />
+
+        <RadioButton
+            android:id="@+id/price_low_to_high_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RadioButtonSort"
+            android:text="قیمت از کم به زیاد" />
+
+        <RadioButton
+            android:id="@+id/newest_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RadioButtonSort"
+            android:text="جدیدترین" />
+
+
+    </RadioGroup>
+
+</FrameLayout>

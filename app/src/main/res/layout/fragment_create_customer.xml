@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".controller.fragment.CreateCustomerFragment">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_login_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/userName_editText_createCustomerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_black_login"
+            android:hint="نام کاربری"
+            android:backgroundTint="@color/secondaryColor"/>
+
+        <EditText
+            android:id="@+id/email_editText_createCustomerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/secondaryColor"/>
+
+        <EditText
+            android:id="@+id/password_editText_createCustomerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:hint="@string/password"
+            android:inputType="numberPassword"
+            android:backgroundTint="@color/secondaryColor"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/register_frameLayout_createCustomerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondaryColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/ic_next_felesh"
+            android:text="@string/enter"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

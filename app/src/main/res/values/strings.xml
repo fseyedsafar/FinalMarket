@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Online Shop</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="close_category">دسته بندی محصولات</string>
+    <string name="date_product">جدیدترین محصولات</string>
+    <string name="popularity_product">محبوبترین محصولات</string>
+    <string name="rating_product">پربازدیدترین محصولات</string>
+    <string name="barcode">barcode</string>
+    <string name="voice">voice</string>
+    <string name="search">Search</string>
+    <string name="navigation_drawer_open">open drawer</string>
+    <string name="navigation_drawer_close">close drawer</string>
+    <string name="title_shopping_cart_menu">سبد خرید شما</string>
+    <string name="exit">exit</string>
+    <string name="shopping_cart">shopping_cart</string>
+
+    <string name="under_line">This is an <u>underline</u>.</string>
+
+    <string name="email">ایمیل</string>
+    <string name="password">کلمه عبور</string>
+    <string name="show_password">نمایش کلمه عبور</string>
+    <string name="forget_password">کلمه عبورم را فراموش کرده ام!</string>
+    <string name="register">ثبت نام در فروشگاه</string>
+    <string name="enter">ورود به دیجی کالا</string>
+    <string name="enter_register">ورود و ثبت نام</string>
+    <string name="username">نام کاربری</string>
+    <string name="on_sale">وضعیت فروش</string>
+    <string name="filter_lable">فیلتر کن</string>
+    <string name="close_filter">close</string>
+    <string name="filter_product">فیلتر کردن محصول</string>
+    <string-array name="spinner_item">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+</resources>

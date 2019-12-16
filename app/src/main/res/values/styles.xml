@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.MaterialComponents.Light.WhiteActionBar">
+        <item name="colorPrimary">@color/primaryTextColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="RadioButtonSort">
+        <item name="android:layoutDirection" tools:targetApi="jelly_bean_mr1">rtl</item>
+        <item name="android:buttonTint" tools:targetApi="lollipop">@color/secondaryColor</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+
+
+</resources>

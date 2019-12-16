@@ -1,0 +1,13 @@
+https://woocommerce.maktabsharif.ir/wp-json/wc/v3/products?
+consumer_key=ck_0c3f701d165bef89c42a0a5ef6c8388df5179c31&consumer_secret=cs_a0dbb7a91a42aec74c91d1ff7612f7559475bd28
+
+
+
+https://woocommerce.maktabsharif.ir/wp-json/wc/v3/products/categories?
+consumer_key=ck_0c3f701d165bef89c42a0a5ef6c8388df5179c31&consumer_secret=cs_a0dbb7a91a42aec74c91d1ff7612f7559475bd28
+
+
+
+https://woocommerce.maktabsharif.ir/wp-json/wc/v3/customers?
+consumer_key=ck_0c3f701d165bef89c42a0a5ef6c8388df5179c31&consumer_secret=cs_a0dbb7a91a42aec74c91d1ff7612f7559475bd28
+
